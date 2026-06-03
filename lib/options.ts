@@ -130,7 +130,7 @@ export const OPTIONS: Option[] = [
       },
       {
         id: "preasure",
-        title: "Тиск (Pressure)",
+        title: "Тиск",
         image: "/photo/preasure.jpeg",
         location: "Дафі",
         blurb:

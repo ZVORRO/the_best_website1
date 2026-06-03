@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const MOBILE_CHAIN = ["Ні", "ну ніии", "точно ні?", "подумай ще", "...ну добре"];
+const MOBILE_CHAIN = ["Ні", "ну нііі", "точно ні?", "подумай ще", "...ну добре"];
 
 export default function RunawayButton() {
   // desktop = є справжній ховер + точний вказівник
