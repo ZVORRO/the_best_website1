@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"E:\\\\Claude Code\\\\nastya\" && mkdir -p public/photo app/api/submit components lib && cp photo/* public/photo/ && echo \"--- public/photo ---\" && ls public/photo)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell(Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { try { Stop-Process -Id $_ -Force -ErrorAction Stop } catch {} }; \"cleared\")",
+      "PowerShell($body = '{\"selections\":[{\"optionId\":\"kino\",\"optionTitle\":\"Кіно\",\"subVariantTitle\":\"Тиск \\(Pressure\\)\",\"location\":\"Дафі\",\"day\":\"Ср, 10 червня\",\"time\":\"19:30\"}],\"customText\":\"а може просто кава?\"}'; try { $r = Invoke-WebRequest -Uri http://localhost:3000/api/submit -Method POST -ContentType 'application/json' -Body $body -ErrorAction Stop; \"STATUS $\\($r.StatusCode\\): $\\($r.Content\\)\" } catch { $resp=$_.Exception.Response; if\\($resp\\){ $sr=New-Object System.IO.StreamReader\\($resp.GetResponseStream\\(\\)\\); \"STATUS $\\([int]$resp.StatusCode\\): $\\($sr.ReadToEnd\\(\\)\\)\" } else { $_.Exception.Message } })",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)"
+    ]
+  }
+}
